@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>JavaScript Assignment Chapter 5</h1> 
+    <button onclick="QOne()">Question 01</button>
+    <button onclick="QTwo()">Question 02</button>
+    <button onclick="QThree()">Question 03</button>
+    <button onclick="QFour()">Question 04</button><br><br>
+    <button onclick="QFive()">Question 05</button>
+    <button onclick="QSix()">Question 06</button>
+    <button onclick="QSeven()">Question 07</button>
+    <button onclick="QEight()">Question 08</button><br><br>
+    <button onclick="QNine()">Question 09</button>
+    <button onclick="QTen()">Question 10</button>
+    <button onclick="QEleven()">Question 11</button>
+    <button onclick="QTwelve()">Question 12</button><br><br>
+    <button onclick="QThirteen()">Question 13</button>
+    <script>
+
+        //Question 1
+       function QOne(){
+        let num1 = prompt("Enter First number");
+        let num2 = prompt("Enter Second number");
+        let add = Number(num1) + Number(num2);
+        document.write(`<br>Sum of ${num1} and ${num2} is ${add}<br><br> <a href="../Chapter 5/index.html"><button>Back</button></a>`);   
+       } 
+
+    //Question 2
+     function QTwo(){
+        let num1 = prompt("Enter First number");
+        let num2 = prompt("Enter Second number");
+        let add = Number(num1) + Number(num2);
+        let mul= num1 * num2;
+        let div= num1 / num2;
+        let sub= num1 - num2;
+        let mod=  num1 % num2;
+        
+        document.write(`<br>
+        Addition of First & Second number is : ${add}<br>
+        Subtraction of First & Second number is : ${sub}<br>
+        Multiplication of First & Second number is : ${mul}<br>
+        Division of Fisrt & Second number is : ${div}<br>
+        Modulus of First & Second number is : ${mod} <br><br>
+        <a href="../Chapter 5/index.html"><button>Back</button></a> `);
+     }
+       
+      //Question 3
+     function QThree(){
+        let x;
+        
+        document.write(`Value after variable declaration is ${x}`);
+        x = 5;
+        document.write(`<br>Initial value : ${x}`);
+        x += 1;
+        document.write(`<br>Value after increment is : ${x}`);
+        x += 7;
+        document.write(`<br>Value after addition 7 is : ${x}`);
+        x -= 1;
+        document.write(`<br>Value after decrement is : ${x}`);
+        document.write(`<br>The remainder is : ${x % 3}<br><br><br><a href="../Chapter 5/index.html"><button>Back</button></a>`);
+        
+        }
+        
+        //Question 4
+        function QFour(){
+         let Number=prompt("Enter Numbers of Ticket You want to buy");
+         let ticketCost=600;
+         let Total=Number*ticketCost;
+         document.write(`Total Cost to buy ${Number} tickets is:${Total}PKR <br><br><br><a href="../Chapter 5/index.html"><button>Back</button></a>`);
+
+          }
+   
+        //Question 5
+
+        function QFive(){
+          let tableNum=prompt("Enter Any Number");
+          document.write(" <h1> Table of " + tableNum + " <br>  </h1>" );
+          for(i=1; i<=10; i++)
+          {
+            document.write(`${tableNum} x${i}= ${tableNum* i} <br><br>`);
+          }
+    
+        }
+        //Question 6
+        function  QSix(){
+        let Celsius=prompt("Enter Temperature in Celsius");
+        let Fahrenheit=(Celsius*9/5) +32;
+        let Fahrenheittemp=prompt("Enter Temperature in Fahrenheit");
+        let Celsiustemp=(Fahrenheittemp - 32) *5/9
+        document.write(`${Celsius}C° is ${Fahrenheit}F° <br> <br>`);
+        document.write(`${Fahrenheittemp}F° is ${Celsiustemp}C° <br><br><br><a href="../Chapter 5/index.html"><button>Back</button></a>`);
+
+
+
+        }
+
+        //question 7
+        function QSeven(){
+          let item1=prompt("Emter Price of Item 1");
+          let item2=prompt("Emter Price of Item 2");
+          let qty1=prompt("Emter Quantity of Item 1");
+          let qty2=prompt("Emter Quantity of Item 2");
+          let shipcost=200;
+          let result=(item1*qty1) + (item2*qty2) + shipcost;
+          document.write(`Price of item1 is ${item1} <br> Price of item2 is ${item2} <br> Quantity of item1 is ${qty1} <br>
+          Quantity of item2 is ${qty2} <br> Shipping Cost  is ${shipcost} <br> <br>`); 
+          document.write(` The Total Amount of your order is ${result} <br><br><br><a href="../Chapter 5/index.html"><button>Back</button></a>`);
+            
+      
+        }
+          
+
+        //Question 8
+        function QEight(){
+          
+           let obtMarks=prompt("Enter your Obtained Marks");
+           let totalMarks=prompt("Enter your Total Marks");
+           let per=obtMarks/totalMarks*100;
+           document.write("<h1>Mark Sheet</h1>")
+           document.write(`Your Obtained Marks is ${obtMarks} <br> Your Total Marks is ${totalMarks} <br> Your Percentage is ${per}% <br> <a href="../Chapter 5/index.html"><button>Back</button></a>`);
+        }
+
+        //Question 9
+        function QNine(){
+          let usd = 10, saudiRiyal = 25; usdToPkr = usd*104.80, riyalToPkr = saudiRiyal*28;
+          document.write(`Currency in PKR<br><br> Total Currency in PKR: ${usdToPkr+riyalToPkr}<br><br><a href="../Chapter 5/index.html"><button>Back</button></a>`);
+        }
+        
+        //Question 10
+        function QTen(){
+          // let num=3; num=num+5; num=num*10; num=num/2;   //method 1
+          let num1= (3+5)*10/2;                            // method 2
+          document.write(`The Final Result is ${num1} <br><br> <a href="../Chapter 5/index.html"><button>Back</button></a>`);
+
+        }
+        //Question 11
+        function QEleven(){
+          let currentYear = 2022 //currentYear.getFullYear();
+            let birthYear = prompt(`Enter your Birth Year`);
+            document.write(`Current Year is ${currentYear} <br> BirthYear is ${birthYear} <br> Your Age is : ${currentYear-birthYear} <br><br><a href="../Chapter 5/index.html"><button>Back</button></a>`);
+        }
+
+        //Question 12
+        function QTwelve(){
+
+         let radius = prompt("Enter value of Radius");
+        let circumference = 2*3.142*radius;
+        let area = 3.142*radius*radius;
+        document.write(`Radius of a circle is : ${radius}<br>
+        The circumference is : ${circumference}<br>
+        The area is : ${area}<br> <br><br> <a href="../Chapter 5/index.html"><button>Back</button></a>`);
+        }
+
+        //Question 13
+        function QThirteen(){
+            let favSnack = prompt(`Enter your favorite Snacks`);
+            let currentAge = prompt(`Enter your age`);
+            let maxAge = 65;
+            let estimatedAmountOfSnacks = 3;
+            let calcAge = (65-(Number(currentAge)));
+            let calcAgeDays = 365*calcAge;
+            let lifeTimeSnacks = calcAgeDays*estimatedAmountOfSnacks;
+            document.write(`Favorite Snack : ${favSnack}<br>
+            Current age : ${currentAge}<br>
+            Estimated Maximum Age : 65<br>
+            Amount of snacks per day : ${estimatedAmountOfSnacks}<br>
+            You will need ${lifeTimeSnacks} ${favSnack} to last you until the ripe old age of 65 <br><br> <a href="../Chapter 5/index.html"><button>Back</button></a>`);
+        }
+    </script>
+     <br><br> <a href="../index.html" ><button>Back</button></a>
+   
+     
+     
+</body>
+</html>
