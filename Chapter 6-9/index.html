@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>JavaScript Assignment Chapter 6-9</h1> 
+   <button onclick="QOne()">Question 01</button>
+   <button onclick="QTwo()">Question 02</button>
+   <button onclick="QThree()">Question 03</button>
+   <button onclick="QFour()">Question 04</button><br><br>
+   <button onclick="QFive()">Question 05</button>
+   
+</body>
+<Script>
+     // Question 1
+     function QOne(){
+     let a = (prompt("Enter Any Number "));
+     document.write(`Result:<br>
+            The value of a is :${a} <br> =============== <br> <br>
+            The value of ++a is :${++a }<br>
+            Now the value of a is : ${a} <br> <br>
+            The value of a++ is :${a++} <br>
+            Now the value of a is : ${a} <br> <br>
+            The value of --a is :${--a} <br>
+            Now the value of a is : ${a} <br> <br>
+            The value of a-- is :${a--} <br>
+            Now the value of a is : ${a} <br> <br> <a href="../Chapter 6-9/index.html"><button>Back</button></a>   `)
+     }
+     // Question 2
+     function QTwo(){
+        let a = 2, b = 1;
+       let result = --a - --b + ++b + b--;
+       document.write(`a is ${a} <br> b is ${b} <br> The result is ${result}
+        <br> The value of --a is: ${a} <br>
+        <br> The value of --a - --b is: ${--a - --b}
+         <br> The value of --a - --b + ++b is: ${--a - --b + ++b}
+         <br> The value of --a - --b + ++b is: ${--a - --b + ++b + b--}  <br> <br> <a href="../Chapter 6-9/index.html"><button>Back</button></a> `)
+
+     }
+     //Question 3
+     function QThree(){
+     let name=prompt("Enter Your Name");
+     alert("Greerings  ," + name + "\n Wlecome to my JavaScript Web Page");
+     document.write(`<br> <br> <a href="./Chapter 6-9/index.html"><button>Back</button></a> `)
+
+     }
+    
+    //Question 4
+    function QFour(){
+        let userInput=prompt("Enter Any Number");
+    
+         if(userInput > 0 && userInput < 9999999)
+        {
+           document.write(`Table of ${userInput} <br> <br>`)
+           for (i=1; i<= 10; i++){
+              document.write(`${userInput} x ${i} = ${userInput * i} <br> `)
+           }
+           
+        }
+        else {
+            document.write("<h1>  Table of 5 <br></h1>");
+            for(x=1;  x<=10; x++)
+           
+            document.write(`5 x ${x} = ${5*x} <br> <br> <br> `);
+            document.write(`<br> <a href="../Chapter 6-9/index.html"><button>Back</button></a>`)
+        }
+        
+            
+   
+      }
+
+       //Question 5
+       function QFive(){
+         let subName1=prompt("Enter Your First Subject Name");
+         let subMarks1=prompt(`Enter Your ${subName1} obtained Number`);
+         let subName2=prompt("Enter Your Second  Subject Name");
+         let subMarks2=prompt(`Enter Your ${subName2}  obtained Number`);
+         let subName3=prompt("Enter Your Third Subject Name");
+         let subMarks3=prompt(`Enter Your ${subName3} obtained Number`);
+         let subTotal1=100;
+         let subTotal2=100;
+         let subTotal3=100;
+         let totalMarks=subTotal1 + subTotal2 + subTotal3;
+         let sub1Per= subMarks1/subTotal1*100;
+         let sub2Per= subMarks2/subTotal2*100;
+         let sub3Per= subMarks3/subTotal3*100;
+         
+         let obtainedMarks= Number(subMarks1 + subMarks2 + subMarks3);
+         let TotalPer=obtainedMarks/totalMarks*100;
+        
+         document.write(`         <table>
+  <tr>
+    <th>Subject</th>
+    <th>Total Marks</th>
+    <th>Obtained Marks</th>
+    <th>Percentage</th>
+  </tr>
+   <tr>
+     <td>${subName1}</td>
+     <td>${subTotal1}</td>
+    <td>${subMarks1}</td>
+     <td>${sub1Per}%</td>
+   </tr>
+   <tr>
+     <td>${subName2}</td>
+     <td>${subTotal2}</td>
+     <td>${subMarks2}</td>
+    <td>${sub2Per}%</td>
+   </tr>
+   <tr>
+   <td>${subName3}</td>
+    <td>${subTotal3}</td>
+    <td>${subMarks3}</td>
+     <td>${sub3Per}%</td>
+</tr>
+  
+   <tr>
+     <td></td>
+    <td>------</td>
+    <td>------</td>
+     <td>------</td>
+   </tr>
+   <tr>
+    <td></td>
+     <td>${totalMarks}</td>
+     <td>${obtainedMarks}</td>
+     <td>${TotalPer}%</td>
+ </tr>
+   </table> <a href="../Chapter 6-9/index.html"><button>Back</button></a>`)  }
+           
+</Script>
+<br><br> <a href="../index.html" ><button>Back</button></a>
+
+</html>
