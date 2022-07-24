@@ -83,7 +83,7 @@
           document.write(" <h1> Table of " + tableNum + " <br>  </h1>" );
           for(i=1; i<=10; i++)
           {
-            document.write(`${tableNum} x${i}= ${tableNum* i} <br><br>`);
+            document.write(`${tableNum} x${i}= ${tableNum* i} <br><br>  <a href="../Chapter 5/index.html"><button>Back</button>`);
           }
     
         }
@@ -102,10 +102,10 @@
 
         //question 7
         function QSeven(){
-          let item1=prompt("Emter Price of Item 1");
-          let item2=prompt("Emter Price of Item 2");
-          let qty1=prompt("Emter Quantity of Item 1");
-          let qty2=prompt("Emter Quantity of Item 2");
+          let item1=prompt("Enter Price of Item 1");
+          let item2=prompt("Enter Price of Item 2");
+          let qty1=prompt("Enter Quantity of Item 1");
+          let qty2=prompt("Enter Quantity of Item 2");
           let shipcost=200;
           let result=(item1*qty1) + (item2*qty2) + shipcost;
           document.write(`Price of item1 is ${item1} <br> Price of item2 is ${item2} <br> Quantity of item1 is ${qty1} <br>
@@ -141,7 +141,7 @@
         }
         //Question 11
         function QEleven(){
-          let currentYear = 2022 //currentYear.getFullYear();
+          let currentYear = 2022 
             let birthYear = prompt(`Enter your Birth Year`);
             document.write(`Current Year is ${currentYear} <br> BirthYear is ${birthYear} <br> Your Age is : ${currentYear-birthYear} <br><br><a href="../Chapter 5/index.html"><button>Back</button></a>`);
         }
@@ -174,6 +174,7 @@
         }
     </script>
      <br><br> <a href="../index.html" ><button>Back</button></a>
+    
    
      
      
